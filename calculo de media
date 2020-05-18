@@ -1,0 +1,132 @@
+import java.util.Scanner;
+
+
+public class CalculoMedia {
+	
+	public static void main(String[] args) {
+		
+		int peso1 = 3;
+		int peso2 = 3;
+		int peso3 = 2;
+		int peso4 = 3;
+		
+		
+		Scanner nota1 = new Scanner(System.in);
+		System.out.print("Digite a Primeira Nota:");
+		int x = nota1.nextInt();
+		int valornota1 = x * peso1;
+		//System.out.println(valornota1);
+		
+
+		Scanner nota2 = new Scanner(System.in);
+		System.out.print("Digite a Segunda Nota:");
+		int Y = nota2.nextInt();
+		int valornota2 = Y * peso2;
+		//System.out.println(valornota2);
+		
+		Scanner nota3= new Scanner(System.in);
+		System.out.print("Digite a Terceira Nota:");
+		int Z = nota3.nextInt();
+		int valornota3 = Z * peso3;
+		//System.out.println(valornota3);
+		
+		Scanner nota4= new Scanner(System.in);
+		System.out.print("Digite a Quarta Nota:");
+		int k = nota4.nextInt();
+		int valornota4 = k * peso4;
+		//System.out.println(valornota4);
+		
+		int mediabimestre = ((valornota1+valornota2+valornota3+valornota4)/11);
+		
+		
+		System.out.println("NOTAS DO SEGUNDO BIMESTRE");
+		
+		Scanner nota5 = new Scanner(System.in);
+		System.out.print("Digite a Primeira Nota:");
+		int x2 = nota5.nextInt();
+		int valornota5 = x2 * peso1;
+		//System.out.println(valornota5);
+		
+
+		Scanner nota6 = new Scanner(System.in);
+		System.out.print("Digite a Segunda Nota:");
+		int Y2 = nota6.nextInt();
+		int valornota6 = Y2 * peso2;
+		//System.out.println(valornota6);
+		
+		Scanner nota7= new Scanner(System.in);
+		System.out.print("Digite a Terceira Nota:");
+		int Z2 = nota7.nextInt();
+		int valornota7 = Z2 * peso3;
+		//System.out.println(valornota7);
+		
+		Scanner nota8= new Scanner(System.in);
+		System.out.print("Digite a Quarta Nota:");
+		int k2 = nota8.nextInt();
+		int valornota8 = k2 * peso4;
+		//System.out.println(valornota8);
+		
+		int mediabimestre2 = ((valornota5+valornota6+valornota7+valornota8)/11);
+		
+		
+		
+System.out.println("NOTAS DO TERCEIRO BIMESTRE");
+		
+		Scanner nota9 = new Scanner(System.in);
+		System.out.print("Digite a Primeira Nota:");
+		int x3 = nota9.nextInt();
+		int valornota9 = x3 * peso1;
+		//System.out.println(valornota5);
+		
+
+		Scanner nota10 = new Scanner(System.in);
+		System.out.print("Digite a Segunda Nota:");
+		int Y3 = nota10.nextInt();
+		int valornota10 = Y3 * peso2;
+		//System.out.println(valornota6);
+		
+		Scanner nota11= new Scanner(System.in);
+		System.out.print("Digite a Terceira Nota:");
+		int Z3 = nota11.nextInt();
+		int valornota11 = Z3 * peso3;
+		//System.out.println(valornota7);
+		
+		Scanner nota12= new Scanner(System.in);
+		System.out.print("Digite a Quarta Nota:");
+		int k3 = nota12.nextInt();
+		int valornota12 = k3 * peso4;
+		//System.out.println(valornota8);
+		
+		int mediabimestre3 = ((valornota9+valornota10+valornota11+valornota12)/11);
+		
+		
+		  if ((mediabimestre+mediabimestre2+mediabimestre3)/3  >= 8) {
+				
+		      System.out.println("APROVADO"); 
+		      
+		  } else { System.out.println("REPROVADO");
+		    	  
+		      
+		  
+		  }
+		    
+		
+				
+		
+				
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+
+}
