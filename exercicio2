@@ -1,0 +1,125 @@
+import java.util.Scanner;
+public class CalaculoMediaaArray {
+	
+     public static void main(String[] args) {
+    	 
+    	int n=3;
+        double notaauxiliar;
+        Scanner nota= new Scanner(System.in);
+  
+        int [] pesos = {5,3,2};
+    	double [] notasaluno1 = new double[3];
+    	double [] notasaluno2 = new double[3];
+    	double [] notasaluno3 = new double[3];
+    	
+    	System.out.println("NOTAS DO ALUNO 1:");
+    	
+    	for (int i = 0; i<n; i++) {
+    		
+    		System.out.println("Digite a nota " + (i+1) + ":"    );
+    		
+    		notaauxiliar = nota.nextInt();
+    	    notasaluno1[i] = notaauxiliar*pesos[i];
+    	    
+    		
+    		
+    		}
+    	
+    	 double mediaaluno1=  (( notasaluno1[0]+ notasaluno1[1]+ notasaluno1[2] )/10);
+    	 
+    	   
+    	   
+    	   
+    	   
+    	   
+    	
+    	System.out.println("NOTAS DO ALUNO 2:");
+    	
+for (int i = 0; i<n; i++) {
+    		
+    		System.out.println("Digite a nota " + (i+1) + ":"    );
+    		
+    		notaauxiliar = nota.nextInt();
+    	    notasaluno2[i] = notaauxiliar*pesos[i];
+    	    
+    		
+    		
+    		}
+
+
+
+double mediaaluno2=  (( notasaluno2[0]+ notasaluno2[1]+ notasaluno2[2] )/10);
+
+
+System.out.println("NOTAS DO ALUNO 3:");
+          
+for (int i = 0; i<n; i++) {
+	
+	System.out.println("Digite a nota " + (i+1) + ":"    );
+	
+	notaauxiliar = nota.nextInt();
+    notasaluno3[i] = notaauxiliar*pesos[i];
+    
+	
+	
+	        }
+
+    
+    	
+double mediaaluno3=  (( notasaluno3[0]+ notasaluno3[1]+ notasaluno3[2] )/10);
+
+
+double mediageral = ((mediaaluno1 + mediaaluno2+ mediaaluno3)/3);
+
+
+
+    if(mediaaluno1 >=5 && mediaaluno1 <=7.9) {
+    	
+    	System.out.println("Aluno 1 foi para prova final");
+    	
+    }else if(mediaaluno1 < 4.9) {
+    	  
+    	System.out.println("aluno 1 foi reprovao");
+    		   
+    } else  {
+ 	   
+ 	   System.out.println("aluno 1 foi aprovado");
+    }
+    	       
+    	   
+if(mediaaluno2 >=5 && mediaaluno2 <=7.9) {
+    	
+    	System.out.println("Aluno 2 foi para prova final");
+    	
+    }else if(mediaaluno2 < 4.9) {
+    	  
+    	System.out.println("aluno 2 foi reprovao");
+    		   
+    } else  {
+ 	   
+ 	   System.out.println("aluno 2 foi aprovado");
+    }
+          
+    	
+if(mediaaluno3 >=5 && mediaaluno3 <=7.9) {
+	
+	System.out.println("Aluno 3 foi para prova final");
+	
+}else if(mediaaluno3 < 4.9) {
+	  
+	System.out.println("aluno 3 foi reprovao");
+		   
+} else  {
+	   
+	   System.out.println("aluno 3 foi aprovado");
+}
+     
+     
+     
+  System.out.println(" A média geral da TURMA E: "  + mediageral);
+
+     
+     
+     }
+    
+  }
