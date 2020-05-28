@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+
+
+public class acoes {
+	
+	public static void main(String[] args) {
+		
+		int maior =0;
+		int menor =0; 
+		
+		int n= 27;
+		Scanner valoracoes = new Scanner (System.in);
+		int acoes[] = new int[28];
+		int mediaacoes;
+		int soma = 0;
+		
+		for (int i=0; i<=n; i++) {
+			
+			System.out.println("Digite valor açao " + (i+1) + ":"    );
+			  
+			   acoes[i] = valoracoes.nextInt();
+			 	
+			
+		}
+		
+		for(int i =0; i<n; i++) {
+			
+			soma = soma +acoes[i];
+			
+			
+			
+		}
+		
+		mediaacoes = (soma/n);
+		
+		System.out.println("A media das acoes é:" + mediaacoes);
+		
+		for(int i = 0; i<= acoes.length-1;i++){
+			
+			if(acoes[i]>maior){
+                maior= acoes[i];
+            }
+            if(acoes[i]<=menor){
+               menor=acoes[i]; 
+            }
+             
+			
+		}
+		
+		System.out.println("o maior valor é:  "+ maior);
+		System.out.println("o menor valor é:  "+ menor);
+		
+	}
+  }
